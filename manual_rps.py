@@ -4,16 +4,14 @@ def get_computer_choice():
     options=["rock", "paper", "scissors"]
     global computer_choice
     computer_choice=random.choice(options)
+    print(computer_choice)
     
-
-
 
 
 def get_user_choice():
     global user_choice
     user_choice=input("Please choose rock, paper or scissors?")
     
-
     
 
 def get_winner(computer_choice, user_choice):
@@ -40,6 +38,7 @@ def get_winner(computer_choice, user_choice):
 
 def play():
     get_computer_choice()
+    
     get_user_choice()
     get_winner(computer_choice, user_choice)
 
